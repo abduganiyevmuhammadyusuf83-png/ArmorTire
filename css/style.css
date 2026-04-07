@@ -1,4 +1,3 @@
-
 :root {
     --primary-green: #3F6745;
     --bg-color: #F5F4F0;
@@ -246,7 +245,6 @@ body {
 }
 
 
-
 .stat-number {
     display: block; 
     font-size: 64px;
@@ -343,3 +341,121 @@ body {
     padding-bottom: 4px;
 }
 
+/* Economist */
+
+.benefits {
+  background-color: var(--bg-creme);
+  padding: 100px 0;
+  overflow: hidden; /* Elementlar ekrandan chiqsa kesish uchun emas, tozalash uchun */
+}
+
+.container {
+  max-width: 1200px; /* Figma-dagi umumiy kenglik */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px; /* Ekran torayganda rasm chetga yopishib qolmasligi uchun */
+}
+
+.benefits__title {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 80px;
+  color: var(--text-dark);
+}
+
+/* 2. Row Sozlamalari */
+.benefit-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ikkalasini markazga yig'adi */
+  width: 100%;
+  margin-bottom: 100px;
+  gap: 0; /* Biz bularni margin bilan ustma-ust tushiramiz */
+}
+
+/* 3. Rasm va uning orqasidagi shakl */
+
+.benefit-row__image {
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.benefit-row__image img {
+  width: 940px;
+}
+
+/* 4. Oq matn bloki */
+.benefit-row__content {
+  flex: 0 0 45%;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  background-color: #e9e6dc;
+  padding: 50px 40px;
+  z-index: 3;
+  margin-left: -47%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* 5. Reverse Holati (Ikkinchi qator uchun) */
+.benefit-row--reverse {
+  flex-direction: row-reverse;
+}
+
+.benefit-row--reverse .benefit-row__content {
+  margin-left: 0;
+  margin-right: -47%; /* Teskari tomonga surish */
+}
+
+/* Reverse holatida orqadagi kulrang boxni ham teskari qilish */
+.benefit-row--reverse .benefit-row__image-wrapper::before {
+  left: -140px;
+}
+
+/* 6. Matn detallari */
+.benefit-row__item-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.benefit-row__highlight {
+  border-left: 4px solid var(--primary-green);
+  padding-left: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.benefit-row__list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-row__list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* Kichik qora kvadrat ikonka */
+.benefit-row__list li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-dark);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 2px;
+}
