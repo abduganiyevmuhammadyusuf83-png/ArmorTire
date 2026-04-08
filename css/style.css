@@ -463,6 +463,10 @@ body {
 
 /* Info Cards */
 
+.tire-info-section {
+  padding-bottom: 300px;
+}
+
 .tire-info-grid {
   display: flex;
   justify-content: center;
@@ -480,7 +484,7 @@ body {
   left: -15px;
   width: 100%;
   height: 100%;
-  background-color: var(--background-color); 
+  background-color: var(--background-color);
   z-index: -1;
   border-radius: 5px;
 }
@@ -495,18 +499,18 @@ body {
 
 /* List */
 .tire-info-item__content {
-  position: absolute; 
-  bottom: -220px; 
-  left: 20px; 
-  right: 20px; 
+  position: absolute;
+  bottom: -220px;
+  left: 20px;
+  right: 20px;
 
   width: 340px;
   height: 297px;
-  background-color: #ffffff; 
+  background-color: #ffffff;
   padding: 30px 25px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  z-index: 10; 
+  z-index: 10;
 }
 
 /* Text */
@@ -528,3 +532,119 @@ body {
   margin-left: 10px;
 }
 
+/* Question Form */
+
+.questions-section {
+ width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #262626; 
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.questions-section .container {
+  max-width: 1200px; 
+  margin: 0 auto;    
+  padding: 0 15px;
+}
+
+.questions-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.questions-subtitle {
+  font-size: 18px;
+  margin-bottom: 60px;
+  border-left: 2px solid #4e6a4e; 
+  padding-left: 15px;
+}
+
+.questions-form__row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.questions-form__group {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+.questions-form__group label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #cccccc;
+}
+
+.questions-form__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff; 
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 16px;
+  outline: none; 
+}
+
+.questions-form__input:focus {
+  border-bottom: 1px solid #4e6a4e;
+}
+
+.questions-header {
+  position: relative;
+  width: 100%; 
+  margin-bottom: 20px; 
+    z-index: 2;
+}
+
+.questions-title {
+  position: relative;
+  display: inline-block;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.questions-title::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  width: 950px;
+  height: 90px;
+  background-color: var(--inner-bg-black);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.questions-form__group--full {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.questions-form__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.questions-form__btn {
+  background-color: #4e6a4e;
+  color: #ffffff;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.questions-form__btn:hover {
+  background-color: #3e5a3e;
+}
