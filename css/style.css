@@ -786,7 +786,7 @@ body {
 /* Contact Section */
 
 .contact-section {
-    background-color: #2E2E2E;
+    background-color: var(--inner-bg-black);
     padding: 100px 0;
     margin-top: 60px;
     color: #fff;
@@ -897,4 +897,179 @@ body {
 
 .btn-submit:hover {
     background-color: green;
+}
+
+/* Work cycle Section */
+
+.work-cycle-section {
+    padding: 80px 0;
+}
+
+.work-cycle-section .container {
+    max-width: 1200px; 
+    width: 100%;        
+    margin: 0 auto;   
+}
+
+.cycle-header {
+    position: relative;
+    margin-bottom: 40px;
+    width: 83%; /* Boshqa sectionlar bilan bir xil chiziqda */
+    margin: 0 auto 40px;
+}
+
+.cycle-header-bg {
+    position: absolute;
+    left: -220px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 70px;
+    background-color: var(--background-color); /* Bir oz to'qroq fon */
+    z-index: 1;
+}
+
+.cycle-title {
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+/* Oq karta */
+.cycle-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    width: 83%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.cycle-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.step-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-icon-box {
+    background-color: #E8E7E0;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-icon-box img {
+    max-width: 60px;
+}
+
+.step-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+.step-arrow img {
+    width: 40px;
+    opacity: 0.5;
+}
+
+/* Usage Section */
+
+.usage-section {
+    width: 100%;
+}
+
+.usage-section .container {
+    max-width: 1200px;
+    width: 70%; 
+    margin: 0 auto;
+}
+
+.usage-grid {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;              
+    margin-bottom: 30px;
+    flex-wrap: wrap;         
+}
+
+.usage-item {
+    flex: 1;      
+    min-width: 250px;       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usage-image {
+    width: 100%;
+    height: 288px;          
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.usage-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+}
+
+.usage-info {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 25px;
+    border-radius: 4px;
+    margin-top: -40px; 
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transform: translateX(15px); 
+}
+
+.usage-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    border-left: 3px solid var(--primary-green);
+    padding-left: 15px;
+    margin: 0;
+}
+
+.instagram-button-wrapper {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+.btn-instagram {
+    background-color: var(--primary-green);
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-instagram:hover {
+    background-color: #3e4b36;
 }
