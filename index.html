@@ -10,26 +10,40 @@
 
     <div class="main-page-wrapper">
 
-        <header class="navbar">
-            <div class="container nav-wrapper">
-                <div class="logo">Logo</div>
-                <nav class="nav-menu">
-                    <ul>
-                        <li><a href="#">Преимущества</a></li>
-                        <li class="separator">|</li>
-                        <li><a href="#">Как работает герметик</a></li>
-                        <li class="separator">|</li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li class="separator">|</li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </nav>
-                <div class="nav-contact">
-                    <span class="phone">+38 (097) 135 56 78</span>
-                    <button class="btn-outline">Обратный звонок</button>
-                </div>
+     <header class="navbar">
+    <div class="container nav-wrapper">
+        <div class="logo">Logo</div>
+
+        <input type="checkbox" id="menu-bar" hidden>
+        <label for="menu-bar" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Преимущества</a></li>
+                <li class="separator">|</li>
+                <li><a href="#">Как работает герметик</a></li>
+                <li class="separator">|</li>
+                <li><a href="#">Отзывы</a></li>
+                <li class="separator">|</li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            
+            <div class="mobile-contact">
+                <span class="phone">+38 (097) 135 56 78</span>
+                <button class="btn-outline">Обратный звонок</button>
             </div>
-        </header>
+        </nav>
+
+        <div class="nav-contact desktop-only">
+            <span class="phone">+38 (097) 135 56 78</span>
+            <button class="btn-outline">Обратный звонок</button>
+        </div>
+    </div>
+</header>
 
         <section class="hero">
             <div class="container">
@@ -319,6 +333,83 @@
             </a>
         </div>
 
+    </div>
+</section>
+
+<section class="product-section">
+    <div class="container">
+        <div class="product-wrapper">
+            
+            <div class="product-content">
+                <div class="product-header-box">
+                    <h2 class="product-title">Герметик для шин</h2>
+                </div>
+                
+                <div class="product-description">
+                    <p>Описание продукции. Возможный состав. Сколько времени он действует и работает.</p>
+                    <p>Товарищи! консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+                </div>
+
+                <div class="product-footer">
+                    <span class="product-price">3 500 грн</span>
+                    <button class="btn-order">Заказать</button>
+                </div>
+            </div>
+
+            <div class="product-image-container">
+                <img src="images/canister.png" alt="Drive Safe Heavy Duty" class="product-img">
+                <div class="product-img-shadow"></div> </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <h2 class="faq-title">ЧАСТО ЗАДАВАЕМЫЕ <br> ВОПРОСЫ</h2>
+
+        <div class="faq-wrapper">
+            <div class="faq-accordion">
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Как часто можно пользоваться герметиком для одного и того же колеса?</p>
+                        <button class="btn-toggle">+</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item active">
+                    <div class="accordion-header">
+                        <p>Как часто можно пользоваться герметиком для одного и того же колеса?</p>
+                        <button class="btn-toggle">-</button>
+                    </div>
+                    <div class="accordion-body">
+                        <p>Товарищи! консультация с широким активным играет важную роль в формировании направлений прогрессивного развития. Повседневная практика показывает, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Как часто можно пользоваться герметиком для одного и того же колеса?</p>
+                        <button class="btn-toggle">+</button>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Как часто можно пользоваться герметиком для одного и того же колеса?</p>
+                        <button class="btn-toggle">+</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="faq-image-box">
+                <div class="faq-img-wrapper">
+                    <img src="images/tirefaq.png" alt="Tires">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 </div> 
